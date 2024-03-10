@@ -5,11 +5,27 @@
   box-sizing: border-box;
 }
 
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Styling the header */
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin-bottom: 10px;
 }
 
 /* Styling the navigation bar */
@@ -19,28 +35,40 @@ nav ul {
 
 nav ul li {
   display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 10px;
+  transition: color 0.3s ease;
 }
 
-/* Different positioning properties */
+nav ul li a:hover {
+  color: #ff7f50; /* Change color on hover */
+}
+
+/* Styling the content */
 .content {
-  position: relative; /* Relative positioning */
-  top: 50px; /* Move content 50px from the top */
+  padding: 50px 0;
+  text-align: center;
 }
 
-nav {
-  position: absolute; /* Absolute positioning */
-  top: 0; /* Stick nav to the top of the page */
-  right: 0; /* Align nav to the right */
+.content h2 {
+  margin-bottom: 20px;
 }
 
-ul {
-  position: fixed; /* Fixed positioning */
-  bottom: 0; /* Stick ul to the bottom */
-  left: 0; /* Align ul to the left */
+/* Styling the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
 }
